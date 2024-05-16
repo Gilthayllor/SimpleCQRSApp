@@ -7,7 +7,7 @@
 
         protected Result(bool isSuccess, string error)
         {
-            IsSuccess = isSuccess; 
+            IsSuccess = isSuccess;
             Error = error;
         }
 

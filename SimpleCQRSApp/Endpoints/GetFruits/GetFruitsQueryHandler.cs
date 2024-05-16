@@ -14,7 +14,9 @@ namespace SimpleCQRSApp.Endpoints.GetFruits
 
         public Task<Result<FruitsResponse>> Handle(GetFruitsQuery request, CancellationToken cancellationToken)
         {
-            return Result.Success(_fruitService.)
+            var fruitsResponse = new FruitsResponse([.. _fruitService.Fruits]);
+
+            return Task.FromResult(Result<FruitsResponse>.Success(fruitsResponse));
         }
     }
 }

@@ -3,7 +3,7 @@
     public class FruitService
     {
         private List<string> _fruits = new List<string>();
-        public IReadOnlyCollection<string> Fruits => _fruits;
+        public IReadOnlyList<string> Fruits => _fruits;
 
         public FruitService()
         {
